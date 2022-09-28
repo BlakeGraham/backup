@@ -1,0 +1,15 @@
+dstdir = "/home/ec2-user/environment/backups/"
+timestamp = datetime.now(.striftime(%Y%m%d,%H%M%S))
+
+
+ else:
+        joblocation=jobs[job]
+        #if job entered did exist
+        print(joblocation)
+        import os 
+        
+        backupdir = "/home/ec2-user/backups"
+if os.path.exists(backupdir):
+ print("Yes file exists") 
+else: 
+ os.mkdir(backupdir)
